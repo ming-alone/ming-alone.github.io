@@ -57,7 +57,7 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://ming-alone.github.io/updater/updater.json"
+        "https://ming-alone.github.io/updater.json"
       ],
       "dialog": true,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDg4OEFGOTRCRDVCODRBQ0IKUldUTFNyalZTL21LaUt2UW1INm5XTHpEU1JHRFpxK2NxMmJFRXhLMlkwTyt3WTVxV2orZEpleUEK"
