@@ -1,5 +1,10 @@
 # Updater Log
 
+## v1.0.15
+
+- feat: 添加功能
+- fix: 修改功能
+
 ## v1.0.14
 
 - feat: xxx
