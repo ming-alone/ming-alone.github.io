@@ -31,6 +31,7 @@ async function updater() {
     per_page: 10,
     page: 1,
   });
+  console.log(tags);
 
   // 过滤包含 `v` 版本信息的 tag
   const tag = tags.find((t) => t.name.startsWith('v'));
