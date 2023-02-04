@@ -2,7 +2,7 @@
  * @Author: tears 596231290@qq.com
  * @Date: 2023-01-31 10:41:51
  * @LastEditors: tears 596231290@qq.com
- * @LastEditTime: 2023-02-04 14:33:25
+ * @LastEditTime: 2023-02-04 15:06:04
  * @FilePath: /tauri-app/vite.config.js
  * @版权声明 保留文件所有权利: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -10,13 +10,19 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 // https://vitejs.dev/config/
-
+import topLevelAwait from 'vite-plugin-top-level-await'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 export default defineConfig({
   plugins: [
     vue(),
+    topLevelAwait({
+      // The export name of top-level await promise for each chunk module
+      promiseExportName: '__tla',
+      // The function to generate import names of top-level await promise in each chunk module
+      promiseImportName: i => `__tla_${i}`
+    }),
     AutoImport({
       resolvers: [ElementPlusResolver()],
     }),
