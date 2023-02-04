@@ -9,7 +9,7 @@
 import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
-import { storeToRefs, createPinia } from 'pinia';
+import { createPinia } from 'pinia';
 import router from "./router";
 import { ElButton } from "element-plus";
 import "element-plus/dist/index.css"
