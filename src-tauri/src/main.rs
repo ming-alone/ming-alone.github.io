@@ -2,7 +2,7 @@
  * @Author: tears 596231290@qq.com
  * @Date: 2023-02-03 21:05:36
  * @LastEditors: tears 596231290@qq.com
- * @LastEditTime: 2023-02-04 15:25:32
+ * @LastEditTime: 2023-02-04 17:31:50
  * @FilePath: /tauri-app/src-tauri/src/main.rs
  * @版权声明 保留文件所有权利: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -17,9 +17,19 @@ fn greet(name: &str) -> String {
     format!("Hello, {}! You've been greeted from Rust!", name)
 }
 use tauri::{CustomMenuItem, Menu, MenuItem, Submenu, Manager};
+use rfd::FileDialog;
+use std::fs;
+use std::io::Result;
 #[derive(Clone, serde::Serialize)]
 struct Payload {
   message: String,
+}
+fn open_file() {
+    let files = FileDialog::new()
+        .set_directory("/")
+        .pick_file();
+    let text = fs::read_to_string(files.unwrap().display().to_string()).unwrap();
+    println!("{}", text);
 }
 // 这里 `"quit".to_string()` 定义菜单项 ID，第二个参数是菜单项标签。
 // 这里 `"quit".to_string()` 定义菜单项 ID，第二个参数是菜单项标签。
@@ -27,7 +37,8 @@ fn main() {
     let quit = CustomMenuItem::new("quit".to_string(), "Quit");
     let close = CustomMenuItem::new("close".to_string(), "Close");
     let open = CustomMenuItem::new("open".to_string(), "Open");
-    let submenu = Submenu::new("File", Menu::new().add_item(quit).add_item(close).add_item(open));
+    let open222 = CustomMenuItem::new("open222".to_string(), "Open222");
+    let submenu = Submenu::new("File", Menu::new().add_item(quit).add_item(close).add_item(open).add_item(open222));
     let menu = Menu::new()
         .add_native_item(MenuItem::Copy)
         .add_item(CustomMenuItem::new("hide", "Hide"))
@@ -43,8 +54,11 @@ fn main() {
                 event.window().emit("click", Payload { message: "12345".into()}).unwrap();
             // event.window().close().unwrap();
             }
-            "open" =>{
+            "open" => {
                 event.window().open_devtools();
+            }
+            "open222" => {
+                open_file();
             }
             _ => {}
         }
