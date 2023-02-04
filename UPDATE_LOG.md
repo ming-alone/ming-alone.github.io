@@ -1,5 +1,6 @@
 # Updater Log
-
+## v1.0.19
+fixed: 修复await报错
 ## v1.0.18
 feat: 添加事件
 ## v1.0.17
