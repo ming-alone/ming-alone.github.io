@@ -1,4 +1,6 @@
 # Updater Log
+## v1.0.20
+- fixed: 修复打包错误
 ## v1.0.19
 - fixed: 修复await报错
 ## v1.0.18
