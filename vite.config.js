@@ -2,7 +2,7 @@
  * @Author: tears 596231290@qq.com
  * @Date: 2023-01-31 10:41:51
  * @LastEditors: tears 596231290@qq.com
- * @LastEditTime: 2023-02-01 01:16:26
+ * @LastEditTime: 2023-02-04 14:33:25
  * @FilePath: /tauri-app/vite.config.js
  * @版权声明 保留文件所有权利: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -46,7 +46,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src') // 将scr 路径命令为 @， 在需要引入src路径下的文件， 直接使用 @/***/**
+      '@': resolve(__dirname, './src'), // 将scr 路径命令为 @， 在需要引入src路径下的文件， 直接使用 @/***/**
+      "vue": "vue/dist/vue.esm-bundler.js"
     }
   },
   build: {
