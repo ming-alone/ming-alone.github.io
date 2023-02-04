@@ -1,4 +1,7 @@
 # Updater Log
+
+## v1.0.18
+feat: 添加事件
 ## v1.0.17
 feat: 添加操作
 
