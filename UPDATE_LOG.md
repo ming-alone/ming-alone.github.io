@@ -1,4 +1,8 @@
 # Updater Log
+## v1.0.23
+
+- feat: 添加svg图标配置
+
 ## v1.0.22
 
 - fix: 修改sourcemap配置
