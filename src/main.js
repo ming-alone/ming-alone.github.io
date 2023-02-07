@@ -14,7 +14,8 @@ import router from "./router";
 import { ElButton } from "element-plus";
 import "element-plus/dist/index.css"
 import { emit, listen } from '@tauri-apps/api/event'
-
+import 'virtual:svg-icons-register';
+import Svg from "./config/svg.js";
 // listen to the `click` event and get a function to remove the event listener
 // there's also a `once` function that subscribes to an event and automatically unsubscribes the listener on the first event
 const unlisten = await listen('click', (event) => {
@@ -27,4 +28,4 @@ const unlisten = await listen('click', (event) => {
 emit('click', {
   theMessage: 'Tauri is awesome!',
 })
-createApp(App).use(ElButton).use(router).use(createPinia()).mount("#app");
+createApp(App).use(Svg).use(ElButton).use(router).use(createPinia()).mount("#app");

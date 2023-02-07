@@ -12,7 +12,9 @@ import {invoke} from "@tauri-apps/api/tauri";
 import {useCounterStore} from "@/store";
 import {ElMessage, ElMessageBox} from "element-plus";
 import { appWindow, WebviewWindow } from '@tauri-apps/api/window'
+import ids from 'virtual:svg-icons-names'
 
+console.log(ids);
 // emit an event that are only visible to the current window
 appWindow.emit('click', { message: 'Tauri is awesome111!' })
 
@@ -55,7 +57,7 @@ const greet = async () => {
     <input id="greet-input" v-model="name" placeholder="Enter a name..."/>
     <button type="button" @click="greet()">Greet</button>
   </div>
-
+  <svg-icon icon-class="404"/>
   <p>{{ greetMsg }}</p>
   <el-button type="primary" @click="open111">Primary</el-button>
   <el-button type="primary" @click="open222">Dialog</el-button>

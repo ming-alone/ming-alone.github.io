@@ -8,12 +8,14 @@
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { resolve } from "path";
+import path, { resolve } from "path";
 // https://vitejs.dev/config/
 import topLevelAwait from 'vite-plugin-top-level-await'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import {createSvgIconsPlugin} from 'vite-plugin-svg-icons';
+
 export default defineConfig({
   plugins: [
     vue(),
@@ -28,7 +30,13 @@ export default defineConfig({
     }),
     Components({
       resolvers: [ElementPlusResolver()],
-    })
+    }),
+    createSvgIconsPlugin({
+      // 指定要缓存的图标文件夹
+      iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
+      // 执行icon name的格式
+      symbolId: 'icon-[dir]-[name]',
+    }),
   ],
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
@@ -52,7 +60,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src'), // 将scr 路径命令为 @， 在需要引入src路径下的文件， 直接使用 @/***/**
+      '@': resolve(__dirname, 'src'), // 将scr 路径命令为 @， 在需要引入src路径下的文件， 直接使用 @/***/**
       "vue": "vue/dist/vue.esm-bundler.js"
     }
   },
