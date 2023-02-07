@@ -1,0 +1,26 @@
+<svg id="通知" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" viewBox="0 0 65 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: currentColor;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="矩形_2106" data-name="矩形 2106" class="cls-1" width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <rect id="矩形_2108" data-name="矩形 2108" class="cls-1" width="65" height="65" rx="10"/>
+  <g id="组_3469" data-name="组 3469" transform="translate(13 13)">
+    <g id="组_3468" data-name="组 3468" class="cls-2">
+      <path id="路径_1261" data-name="路径 1261" class="cls-3" d="M35.333,32H2V28.667H3.667V17.052a15,15,0,1,1,30,0V28.667h1.667ZM7,28.667H30.333V17.052A11.667,11.667,0,1,0,7,17.052Zm7.5,5h8.333a4.167,4.167,0,0,1-8.333,0" transform="translate(1.333 1.333)"/>
+    </g>
+  </g>
+</svg>

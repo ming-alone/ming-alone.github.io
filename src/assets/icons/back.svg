@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="组_5646" data-name="组 5646" transform="translate(-49 -57)">
+    <rect id="Rectangle_271" data-name="Rectangle 271" width="24" height="24" rx="2" transform="translate(49 57)" fill="#999"/>
+    <g id="right" transform="translate(53 61)">
+      <rect id="矩形" width="16" height="16" opacity="0"/>
+      <path id="路径" d="M.192,5.528,7.236.027a.124.124,0,0,1,.2.1V1.333a.253.253,0,0,1-.1.2L1.717,5.922l5.625,4.392a.248.248,0,0,1,.1.2v1.208a.125.125,0,0,1-.2.1L.192,6.316A.5.5,0,0,1,.192,5.528Z" transform="translate(3.844 2.078)" fill="currentColor"/>
+    </g>
+  </g>
+</svg>

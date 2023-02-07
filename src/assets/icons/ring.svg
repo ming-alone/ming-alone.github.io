@@ -1,0 +1,10 @@
+<svg id="组_5172" data-name="组 5172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_2861" data-name="矩形 2861" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="组_5171" data-name="组 5171" clip-path="url(#clip-path)">
+    <path id="路径_1657" data-name="路径 1657" d="M11,2.05V5.07a7,7,0,1,0,5.192,12.536l2.137,2.137A10,10,0,1,1,11,2.05M21.95,13a9.948,9.948,0,0,1-2.207,5.328l-2.137-2.136A6.958,6.958,0,0,0,18.929,13H21.95ZM13,2.05A10,10,0,0,1,21.952,11H18.93A7,7,0,0,0,13,5.071V2.049Z" fill="currentColor"/>
+  </g>
+</svg>

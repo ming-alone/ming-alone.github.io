@@ -1,0 +1,35 @@
+<svg id="组_5510" data-name="组 5510" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0.01;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: currentColor;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="矩形_3191" data-name="矩形 3191" class="cls-1" width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="组_5508" data-name="组 5508" class="cls-2">
+    <circle id="椭圆_107" data-name="椭圆 107" class="cls-4" cx="16.667" cy="16.667" r="16.667" transform="translate(3.333 3.333)"/>
+    <circle id="椭圆_108" data-name="椭圆 108" class="cls-5" cx="4.167" cy="4.167" r="4.167" transform="translate(15.833 10.833)"/>
+    <path id="路径_1770" data-name="路径 1770" class="cls-4" d="M5.011,22.277A8.334,8.334,0,0,1,13.326,14.5h6.667a8.333,8.333,0,0,1,8.313,7.76" transform="translate(3.341 9.667)"/>
+  </g>
+</svg>

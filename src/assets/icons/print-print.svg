@@ -1,0 +1,43 @@
+<svg id="组_5292" data-name="组 5292" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke: currentColor;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3, .cls-5 {
+        stroke-linecap: round;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-miterlimit: 2;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-6 {
+        opacity: 0.01;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="矩形_3010" data-name="矩形 3010" class="cls-1" width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="组_5291" data-name="组 5291" class="cls-2">
+    <path id="路径_1705" data-name="路径 1705" class="cls-3" d="M22.5,11.75V4.25A1.25,1.25,0,0,0,21.25,3h-15A1.25,1.25,0,0,0,5,4.25v7.5" transform="translate(1.25 0.75)"/>
+    <rect id="矩形_3008" data-name="矩形 3008" class="cls-4" width="22.5" height="13.75" rx="1" transform="translate(3.75 12.5)"/>
+    <rect id="矩形_3009" data-name="矩形 3009" class="cls-5" width="9.375" height="5" transform="translate(12.5 21.25)"/>
+    <line id="直线_113" data-name="直线 113" class="cls-5" x2="1.875" transform="translate(7.5 16.25)"/>
+  </g>
+</svg>

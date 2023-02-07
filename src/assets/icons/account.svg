@@ -1,0 +1,26 @@
+<svg id="账户" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" viewBox="0 0 65 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: currentColor;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="矩形_2079" data-name="矩形 2079" class="cls-1" width="45" height="45"/>
+    </clipPath>
+  </defs>
+  <path id="路径_1735" data-name="路径 1735" class="cls-1" d="M10,0H55A10,10,0,0,1,65,10V55A10,10,0,0,1,55,65H10A10,10,0,0,1,0,55V10A10,10,0,0,1,10,0Z"/>
+  <g id="组_3455" data-name="组 3455" transform="translate(10 10)">
+    <g id="组_3454" data-name="组 3454" class="cls-2">
+      <path id="路径_1256" data-name="路径 1256" class="cls-3" d="M20.652,39.3A18.652,18.652,0,1,1,39.3,20.652,18.651,18.651,0,0,1,20.652,39.3m-9.3-6.983a14.925,14.925,0,0,0,18.939-.276,13.056,13.056,0,0,0-18.939.276M8.744,29.642a16.789,16.789,0,0,1,24.072-.347,14.921,14.921,0,1,0-24.072.349Zm11.907-7.125a7.461,7.461,0,1,1,7.461-7.461,7.461,7.461,0,0,1-7.461,7.461m0-3.73a3.73,3.73,0,1,0-3.73-3.73,3.729,3.729,0,0,0,3.73,3.73" transform="translate(1.73 1.73)"/>
+    </g>
+  </g>
+</svg>

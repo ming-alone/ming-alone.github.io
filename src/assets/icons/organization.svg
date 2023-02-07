@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: currentColor;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="矩形_3183" data-name="矩形 3183" class="cls-1" width="80" height="80" transform="translate(785 235)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="矩形_2153" data-name="矩形 2153" class="cls-2" width="76.879" height="79.999"/>
+    </clipPath>
+  </defs>
+  <g id="蒙版组_17" data-name="蒙版组 17" class="cls-3" transform="translate(-785 -235)">
+    <g id="组_3511" data-name="组 3511" transform="translate(785.438 234.999)">
+      <g id="组_3508" data-name="组 3508" transform="translate(1.561 0.001)">
+        <g id="组_3507" data-name="组 3507" class="cls-4" transform="translate(0 0)">
+          <path id="路径_1321" data-name="路径 1321" class="cls-2" d="M1.441,79.251V73.477a1.428,1.428,0,0,1,1.387-1.451c.837-.01,1.652-.019,2.7-.019V22.6c0-6.289,1.7-8.877,7.365-11.224,7.756-3.214,15.5-6.468,23.282-9.61,5.411-2.183,10.18.039,11.814,5.475a14.737,14.737,0,0,1,.4,4.111q.035,28.88.014,57.76v2.863h8.663V69.145q0-18.094,0-36.188c0-4.279,1.568-4.689,5.956-2.063a74.565,74.565,0,0,0,8.17,4.063c2.275,1.007,3.136,2.438,3.1,5.017-.131,9.74-.052,19.485-.052,29.229V72h2.592a1.428,1.428,0,0,1,1.4,1.451v5.793a1.428,1.428,0,0,1-1.4,1.451h-74a1.413,1.413,0,0,1-1.4-1.441M18.349,36.407H35.573a4.369,4.369,0,0,0,0-8.732H18.349a4.369,4.369,0,0,0,0,8.732m.019,22.275H35.5a4.4,4.4,0,0,0,0-8.8H18.367a4.327,4.327,0,0,0-4.248,4.4,4.476,4.476,0,0,0,1.243,3.112,4.169,4.169,0,0,0,3,1.287" transform="translate(-1.455 -0.825)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
