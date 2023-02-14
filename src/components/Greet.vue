@@ -45,7 +45,7 @@ const open222 = () => {
 }
 const greetMsg = ref("");
 const name = ref("");
-
+invoke("init_process");
 const greet = async () => {
   // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
   greetMsg.value = await invoke("greet", {name: name.value});
