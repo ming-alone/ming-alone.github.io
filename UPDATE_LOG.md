@@ -1,4 +1,9 @@
 # Updater Log
+
+## v1.0.24
+
+- feat: 添加权限
+
 ## v1.0.23
 
 - feat: 添加svg图标配置
