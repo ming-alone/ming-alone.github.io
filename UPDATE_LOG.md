@@ -1,5 +1,9 @@
 # Updater Log
 
+## v1.0.25
+
+- feat: 添加蓝牙
+
 ## v1.0.24
 
 - feat: 添加权限
