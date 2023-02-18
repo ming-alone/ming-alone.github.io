@@ -27,6 +27,20 @@
         "unmaximize": true,
         "unminimize": true,
         "startDragging": true
+      },
+      "http": {
+        "scope": [
+          "http://**",
+          "https://**"
+        ]
+      },
+      "fs": {
+        "scope": [
+          "*"
+        ]
+      },
+      "notification": {
+        "all": true
       }
     },
     "bundle": {
@@ -81,6 +95,7 @@
         "title": "tauri-app",
         "width": 800
       }
-    ]
+    ],
+    "macOSPrivateApi": true
   }
 }

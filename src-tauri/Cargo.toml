@@ -14,10 +14,20 @@ rust-version = "1.57"
 tauri-build = { version = "1.2", features = [] }
 
 [dependencies]
-serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.2", features = ["devtools", "shell-open", "updater"] }
-rfd = "0.9.1"
+tauri = { version = "= 1.2.0", features = ["devtools", "macos-private-api", "notification-all", "shell-open", "updater", "window-close", "window-hide", "window-maximize", "window-minimize", "window-show", "window-start-dragging", "window-unmaximize", "window-unminimize"] }
+rfd = "= 0.9.1"
+df-excel = "0.1.2"
+json = "0.12.4"
+btleplug = "0.10.4"
+lazy_static = "1.4.0"
+rand = "0.8.5"
+uuid = "1.2.2"
+tokio = { version = "1.22.0", features = ["macros", "rt", "rt-multi-thread"] }
+tokio-stream = { version = "0.1.11", features = ["sync"] }
+futures = "0.3.25"
+serde_json = "1.0.89"
+pretty_env_logger = "0.4.0"
 
 [features]
 # by default Tauri runs in production mode

@@ -23,7 +23,7 @@ const unlisten = await listen('click', (event) => {
   // event.payload is the payload object
   console.log('click', event);
 })
-
+// navigator.libs.requestDevice({acceptAllDevices: true}).then(r => console.log(r))
 // emits the `click` event with the object payload
 emit('click', {
   theMessage: 'Tauri is awesome!',
