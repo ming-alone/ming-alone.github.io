@@ -1,5 +1,10 @@
 # Updater Log
 
+## v1.0.26
+
+- fix: 修复button样式
+- fix: 修改input
+
 ## v1.0.25
 
 - feat: 添加蓝牙
