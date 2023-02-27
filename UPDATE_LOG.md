@@ -1,5 +1,9 @@
 # Updater Log
 
+## v1.0.27
+
+- fix: 添加自定义协议
+
 ## v1.0.26
 
 - fix: 修复button样式
