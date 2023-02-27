@@ -2,13 +2,13 @@
  * @Author: tears 596231290@qq.com
  * @Date: 2023-02-03 21:05:36
  * @LastEditors: tears 596231290@qq.com
- * @LastEditTime: 2023-02-04 17:31:50
+ * @LastEditTime: 2023-02-28 04:41:03
  * @FilePath: /tauri-app/src-tauri/src/main.rs
  * @版权声明 保留文件所有权利: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 #![cfg_attr(
-all(not(debug_assertions), target_os = "windows"),
-windows_subsystem = "windows"
+    all(not(debug_assertions), target_os = "windows"),
+    windows_subsystem = "windows"
 )]
 
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
@@ -17,13 +17,17 @@ fn greet(name: &str) -> String {
     format!("Hello, {}! You've been greeted from Rust!", name)
 }
 
-use tauri::{CustomMenuItem, Menu, MenuItem, Submenu, Manager};
 use rfd::FileDialog;
-use std::fs;
 use std::env;
+use std::fs;
 use std::path::PathBuf;
+use std::result::Result;
+use tauri::{
+    http::Request, http::Response, http::ResponseBuilder, AppHandle, CustomMenuItem, Manager, Menu,
+    MenuItem, Submenu,
+};
 // use std::io::Result;
-use df_excel::{write::Excel, read::Read, Head};
+use df_excel::{read::Read, write::Excel, Head};
 use json::{array, object};
 
 #[derive(Clone, serde::Serialize)]
@@ -32,9 +36,7 @@ struct Payload {
 }
 
 fn open_file() {
-    let files = FileDialog::new()
-        .set_directory("/")
-        .pick_file();
+    let files = FileDialog::new().set_directory("/").pick_file();
     // let text = fs::read_to_string(files.clone().unwrap().display().to_string()).unwrap();
     // println!("{}", text);
     // let path = format!("/Users/tears/Downloads/weixin/demo.xlsx");
@@ -75,7 +77,6 @@ fn export() {
 
     let mut excel = Excel::new("/Users/tears/Downloads/weixin/demo.xlsx");
 
-
     let heads = vec![
         Head::new("order_no", "订单", "", 0),
         Head::new("code", "编号", "", 0),
@@ -89,7 +90,10 @@ fn export() {
         Head::new("subtotal", "合计", "", 0),
     ];
 
-    let data = array![object! {"order_no":"123","code":"321","name":"订单123"}, object! {"order_no":"123345","code":"321222","name":"订单123123123"}];
+    let data = array![
+        object! {"order_no":"123","code":"321","name":"订单123"},
+        object! {"order_no":"123345","code":"321222","name":"订单123123123"}
+    ];
 
     excel.set_page(0, "name0", heads.clone(), data.clone());
     excel.set_page(1, "name1", heads.clone(), data);
@@ -110,7 +114,14 @@ fn main() {
     let close = CustomMenuItem::new("close".to_string(), "Close");
     let open = CustomMenuItem::new("open".to_string(), "Open");
     let open222 = CustomMenuItem::new("open222".to_string(), "Open222");
-    let submenu = Submenu::new("File", Menu::new().add_item(quit).add_item(close).add_item(open).add_item(open222));
+    let submenu = Submenu::new(
+        "File",
+        Menu::new()
+            .add_item(quit)
+            .add_item(close)
+            .add_item(open)
+            .add_item(open222),
+    );
     let menu = Menu::new()
         .add_native_item(MenuItem::Copy)
         .add_item(CustomMenuItem::new("hide", "Hide"))
@@ -147,10 +158,20 @@ fn main() {
             app.unlisten(id);
 
             // emit the `event-name` event to all webview windows on the frontend
-            app.emit_all("click", Payload { message: "Tauri is awesome11111!".into() }).unwrap();
+            app.emit_all(
+                "click",
+                Payload {
+                    message: "Tauri is awesome11111!".into(),
+                },
+            )
+            .unwrap();
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![greet])
+        .register_uri_scheme_protocol("brinishness", move |app, request| {
+            print!("{}", request.uri());
+            return ResponseBuilder::new().status(404).body(Vec::new());
+        })
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

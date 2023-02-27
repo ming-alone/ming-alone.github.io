@@ -11,14 +11,21 @@
     "version": "../package.json"
   },
   "tauri": {
+    "pattern": {
+      "use": "brownfield"
+    },
     "allowlist": {
-      "all": false,
+      "all": true,
       "shell": {
-        "all": false,
-        "open": true
+        "all": true,
+        "open": true,
+        "sidecar": true
+      },
+      "os": {
+        "all": true
       },
       "window": {
-        "all": false,
+        "all": true,
         "close": true,
         "hide": true,
         "show": true,

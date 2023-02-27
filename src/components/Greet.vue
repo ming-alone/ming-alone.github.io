@@ -11,16 +11,16 @@ import {ref} from "vue";
 import {invoke} from "@tauri-apps/api/tauri";
 import {useCounterStore} from "@/store";
 import {ElMessage, ElMessageBox} from "element-plus";
-import { appWindow, WebviewWindow } from '@tauri-apps/api/window'
+import {appWindow, WebviewWindow} from '@tauri-apps/api/window'
 import ids from 'virtual:svg-icons-names'
 
 console.log(ids);
 // emit an event that are only visible to the current window
-appWindow.emit('click', { message: 'Tauri is awesome111!' })
+appWindow.emit('click', {message: 'Tauri is awesome111!'})
 
 // create a new webview window and emit an event only to that window
-const webview = new WebviewWindow('window')
-webview.emit('click', { message: '123456'})
+// const webview = new WebviewWindow('window')
+// webview.emit('click', {message: '123456'})
 const store = useCounterStore()
 const open111 = () => {
   store.increment();
@@ -45,6 +45,39 @@ const open222 = () => {
 }
 const greetMsg = ref("");
 const name = ref("");
+let webview;
+const open333 = () => {
+  webview = new WebviewWindow('11111', {
+        label: '1111',            // 窗口唯一label
+        // title: '',              // 窗口标题
+        url: 'tauri://localhost/about',                // 路由地址url
+        // width: 900,             // 窗口宽度
+        // height: 640,            // 窗口高度
+        // minWidth: null,         // 窗口最小宽度
+        // minHeight: null,        // 窗口最小高度
+        // x: 0,                // 窗口相对于屏幕左侧坐标
+        // y: 0,                // 窗口相对于屏幕顶端坐标
+        // center: false,           // 窗口居中显示
+        // resizable: true,        // 是否支持缩放
+        // maximized: true,       // 最大化窗口
+        // decorations: false,     // 窗口是否无边框及导航条
+        // alwaysOnTop: false,     // 置顶窗口
+      }
+  )
+  console.log(webview);
+  webview.once('tauri://created', function (e) {
+    console.log(e);
+    // webview window successfully created
+  })
+  webview.once('tauri://error', function (e) {
+    console.log(e);
+    // an error happened creating the webview window
+  })
+}
+const open444 = () => {
+  const testWindow = WebviewWindow.getByLabel("1111");//这里就是获取label
+  testWindow.close();
+}
 // invoke("init_process");
 const greet = async () => {
   // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
@@ -61,4 +94,6 @@ const greet = async () => {
   <p>{{ greetMsg }}</p>
   <el-button type="primary" @click="open111">Primary</el-button>
   <el-button type="primary" @click="open222">Dialog</el-button>
+  <el-button type="primary" @click="open333">webView</el-button>
+  <el-button type="primary" @click="open444">webView</el-button>
 </template>

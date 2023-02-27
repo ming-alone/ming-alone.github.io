@@ -34,7 +34,7 @@ const unlisten = await listen('click', (event) => {
 })
 // navigator.libs.requestDevice({acceptAllDevices: true}).then(r => console.log(r))
 // emits the `click` event with the object payload
-emit('click', {
-  theMessage: 'Tauri is awesome!',
-})
+// emit('click', {
+//   theMessage: 'Tauri is awesome!',
+// })
 createApp(App).use(Svg).use(ElButton, ElInput).use(router).use(createPinia()).mount("#app");

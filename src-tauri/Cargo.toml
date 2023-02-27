@@ -15,7 +15,7 @@ tauri-build = { version = "1.2", features = [] }
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "= 1.2.0", features = ["devtools", "macos-private-api", "notification-all", "shell-open", "updater", "window-close", "window-hide", "window-maximize", "window-minimize", "window-show", "window-start-dragging", "window-unmaximize", "window-unminimize"] }
+tauri = { version = "= 1.2.0", features = ["api-all", "devtools", "macos-private-api", "updater"] }
 rfd = "= 0.9.1"
 df-excel = "0.1.2"
 json = "0.12.4"
