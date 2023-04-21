@@ -1,0 +1,35 @@
+{
+  "version": "v1.0.29",
+  "notes": "- feat: 版本升级",
+  "pub_date": "2023-04-21T13:00:35.396Z",
+  "platforms": {
+    "win64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTFNyalZTL21LaUd2UmlsOGdjVGFqSTVaakpaM1dBaFR0Nk1mMW9VbXVPMmhjeGNNRTd4UWVhRm1YZm5NQ2NNRFh3M1pkNEx5SktQUVdGcVFBWkpMTFdkRnhPRm9TWEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgyMDgxNzc2CWZpbGU6dGF1cmktYXBwXzEuMC4yOV94NjRfZW4tVVMubXNpLnppcApjdVNtbzhBYVltaWNPRGhtZEh1TVJ3TXMzNnllYU9ubnJQR2E3VFp0TytkZWxjUytBa0JObU15Wm10cWFLcG1OM3Q0Q0FEQlFJKy9nbCt2eUdEVXREUT09Cg==",
+      "url": "https://github.com/ming-alone/ming-alone.github.io/releases/download/v1.0.29/tauri-app_1.0.29_x64_en-US.msi.zip"
+    },
+    "linux": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTFNyalZTL21LaU1rbndLd21tUG9pMHM5Y2U0dWU4blJDYW4xUVRURVh2VGZnN2hjMmp3SnVJWXY0aWFUWUVpK1E3SUI2bHpzaWVpcDRKZWRTdThTMXdLQ2VPVW1jeVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgyMDgxNTg0CWZpbGU6dGF1cmktYXBwXzEuMC4yOV9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKdEF3alUwVTRzZnlCMWNZRWhiM3NSR0lHZjlXTmM4U0lKTnB6cDNkTkVoMWRhaXNES1MxTytHcnNpZUdvTER5cEpUK0p3TXhwZkkyUXNPdmpjSDhIRHc9PQo=",
+      "url": "https://github.com/ming-alone/ming-alone.github.io/releases/download/v1.0.29/tauri-app_1.0.29_amd64.AppImage.tar.gz"
+    },
+    "darwin": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTFNyalZTL21LaUVIdzFYdUI0Z29KQWloYkE0MXUxS3FRUW1EazJ2ZkR6WjhQQkhGb3YxWG9pN2FVelJ4YkJ5OHRQOURVVkpmR1Zqak1QMWhtUysvSWpYdHIvZVYzOFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgyMDgxOTcyCWZpbGU6dGF1cmktYXBwLmFwcC50YXIuZ3oKL1BsN3poUFlDcldOb0wxQUJIWlV6eGp4Qjhlenh3MWFlcWJ4WCtSa0E0c3dJbllXVDdIU3FJMDNVU2dSOGY2a28vV29JYWRhOUM2U2ZjU3RwV2RVQWc9PQo=",
+      "url": "https://github.com/ming-alone/ming-alone.github.io/releases/download/v1.0.29/tauri-app.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTFNyalZTL21LaUVIdzFYdUI0Z29KQWloYkE0MXUxS3FRUW1EazJ2ZkR6WjhQQkhGb3YxWG9pN2FVelJ4YkJ5OHRQOURVVkpmR1Zqak1QMWhtUysvSWpYdHIvZVYzOFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgyMDgxOTcyCWZpbGU6dGF1cmktYXBwLmFwcC50YXIuZ3oKL1BsN3poUFlDcldOb0wxQUJIWlV6eGp4Qjhlenh3MWFlcWJ4WCtSa0E0c3dJbllXVDdIU3FJMDNVU2dSOGY2a28vV29JYWRhOUM2U2ZjU3RwV2RVQWc9PQo=",
+      "url": "https://github.com/ming-alone/ming-alone.github.io/releases/download/v1.0.29/tauri-app.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTFNyalZTL21LaUVIdzFYdUI0Z29KQWloYkE0MXUxS3FRUW1EazJ2ZkR6WjhQQkhGb3YxWG9pN2FVelJ4YkJ5OHRQOURVVkpmR1Zqak1QMWhtUysvSWpYdHIvZVYzOFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgyMDgxOTcyCWZpbGU6dGF1cmktYXBwLmFwcC50YXIuZ3oKL1BsN3poUFlDcldOb0wxQUJIWlV6eGp4Qjhlenh3MWFlcWJ4WCtSa0E0c3dJbllXVDdIU3FJMDNVU2dSOGY2a28vV29JYWRhOUM2U2ZjU3RwV2RVQWc9PQo=",
+      "url": "https://github.com/ming-alone/ming-alone.github.io/releases/download/v1.0.29/tauri-app.app.tar.gz"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTFNyalZTL21LaU1rbndLd21tUG9pMHM5Y2U0dWU4blJDYW4xUVRURVh2VGZnN2hjMmp3SnVJWXY0aWFUWUVpK1E3SUI2bHpzaWVpcDRKZWRTdThTMXdLQ2VPVW1jeVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgyMDgxNTg0CWZpbGU6dGF1cmktYXBwXzEuMC4yOV9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKdEF3alUwVTRzZnlCMWNZRWhiM3NSR0lHZjlXTmM4U0lKTnB6cDNkTkVoMWRhaXNES1MxTytHcnNpZUdvTER5cEpUK0p3TXhwZkkyUXNPdmpjSDhIRHc9PQo=",
+      "url": "https://github.com/ming-alone/ming-alone.github.io/releases/download/v1.0.29/tauri-app_1.0.29_amd64.AppImage.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUTFNyalZTL21LaUd2UmlsOGdjVGFqSTVaakpaM1dBaFR0Nk1mMW9VbXVPMmhjeGNNRTd4UWVhRm1YZm5NQ2NNRFh3M1pkNEx5SktQUVdGcVFBWkpMTFdkRnhPRm9TWEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjgyMDgxNzc2CWZpbGU6dGF1cmktYXBwXzEuMC4yOV94NjRfZW4tVVMubXNpLnppcApjdVNtbzhBYVltaWNPRGhtZEh1TVJ3TXMzNnllYU9ubnJQR2E3VFp0TytkZWxjUytBa0JObU15Wm10cWFLcG1OM3Q0Q0FEQlFJKy9nbCt2eUdEVXREUT09Cg==",
+      "url": "https://github.com/ming-alone/ming-alone.github.io/releases/download/v1.0.29/tauri-app_1.0.29_x64_en-US.msi.zip"
+    }
+  }
+}
